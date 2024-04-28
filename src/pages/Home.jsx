@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { homeBanner } from "../constants/images";
 
 const Home = () => {
   return (
@@ -7,7 +8,7 @@ const Home = () => {
       <div className="image w-full h-full">
         <img
           className=" w-full h-[calc(100vh-150px)] object-cover"
-          src="../images/home-bnr.webp"
+          src={homeBanner}
           alt=""
           srcset=""
         />
