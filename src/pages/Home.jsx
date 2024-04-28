@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { homeBanner } from "../constants/images";
+import { homeBanner, flagEgypt, flagTurkey } from "../constants/images";
 
 const Home = () => {
   return (
@@ -19,13 +19,13 @@ const Home = () => {
         </h1>
         <div className=" flex flex-col md:flex-row gap-12 md:gap-32">
           <Link to="/egypt">
-            <img src="../images/flag-egypt.webp" alt="" />
+            <img src={flagEgypt} alt="" />
             <p className=" text-center text-xl uppercase mt-3 text-black">
               egypt
             </p>
           </Link>
           <Link to="/turkey">
-            <img src="../images/flag-turkey.webp" alt="" />
+            <img src={flagTurkey} alt="" />
             <p className=" text-center text-xl uppercase mt-3 text-black">
               turkey
             </p>
