@@ -2,7 +2,7 @@ import React from "react";
 import { getEgyptData } from "../../constants/data";
 import { getImageURL } from "../../utils/image-util";
 import { Link } from "react-router-dom";
-import { nesmalLogo } from "../../constants/images";
+import { egyptAboutBanner, nesmalLogo } from "../../constants/images";
 
 const EgyptAbout = () => {
   const data = getEgyptData();
@@ -32,7 +32,7 @@ const EgyptAbout = () => {
         <div className=" w-full h-[400px]">
           <img
             className=" h-full w-full object-cover"
-            src="../images/bnr-about_egypt.webp"
+            src={egyptAboutBanner}
             alt=""
           />
         </div>

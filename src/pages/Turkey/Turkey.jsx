@@ -2,6 +2,7 @@ import React from "react";
 import { getTurkeyData } from "../../constants/data";
 import CompanyCard from "../../components/CompanyCard";
 import { Link } from "react-router-dom";
+import { turkeyBanner, turkeyHomeImage } from "../../constants/images";
 
 const Turkey = () => {
   const dataT = getTurkeyData();
@@ -10,7 +11,7 @@ const Turkey = () => {
       <div className="banner w-full h-[400px]">
         <img
           className=" h-full w-full object-cover"
-          src="./images/bnr-home_egypt1.jpg"
+          src={turkeyBanner}
           alt=""
         />
       </div>
@@ -57,7 +58,7 @@ const Turkey = () => {
           <div className="right flex-1">
             <img
               className=" h-full w-full object-cover"
-              src="./images/about-turkey_thumb.webp"
+              src={turkeyHomeImage}
               alt=""
             />
           </div>

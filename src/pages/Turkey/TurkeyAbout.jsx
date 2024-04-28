@@ -2,6 +2,11 @@ import React from "react";
 import { getTurkeyData } from "../../constants/data";
 import { getImageURL } from "../../utils/image-util";
 import { Link } from "react-router-dom";
+import {
+  nesmalLogo,
+  turkeyAboutBanner,
+  turkeyHomeImage,
+} from "../../constants/images";
 
 const TurkeyAbout = () => {
   const data = getTurkeyData();
@@ -31,7 +36,7 @@ const TurkeyAbout = () => {
         <div className=" w-full h-[400px]">
           <img
             className=" h-full w-full object-cover"
-            src="../images/bnr-about_turkey.webp"
+            src={turkeyAboutBanner}
             alt=""
           />
         </div>
@@ -78,7 +83,7 @@ const TurkeyAbout = () => {
           </div>
           <div className="right flex-1">
             <div className="logo w-36 m-auto mb-10">
-              <img src="../images/logo-nesmal.webp" />
+              <img src={nesmalLogo} />
             </div>
             <div>
               <h3 className=" text-4xl mb-2 border-b-2 pb-2 border-green-700">
