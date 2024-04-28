@@ -27,8 +27,9 @@ const EgyptContact = () => {
         <div className=" w-full h-[400px]">
           <iframe
             className=" w-full h-full"
-            id="gmap_canvas"
-            src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Road%20261,%20New%20Maadi%20Cairo+(nesmal)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d456.80997522853573!2d31.37663874846424!3d30.125616121817078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458168b54857289%3A0x10198a95305e019b!2sNesma%20Airlines!5e0!3m2!1sen!2sse!4v1714316828509!5m2!1sen!2sse"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
         <div className="content flex flex-col sm:flex-row gap-10 px-4 my-16">

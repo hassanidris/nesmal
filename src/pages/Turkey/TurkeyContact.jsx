@@ -27,7 +27,9 @@ const TurkeyContact = () => {
         <div className=" w-full h-[400px]">
           <iframe
             className=" w-full h-full"
-            src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Nida%20Kule%20G%C3%B6ztepe,%20Kat%2025,%2034672%20Kad%C4%B1k%C3%B6y%20%C4%B0stanbul+(Nesmal%20Turkey)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2639.7260049588!2d29.065862007333944!3d40.994112182613144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7de62a07683%3A0x7fdbcc4fba685c80!2zTmVzbWFsIFlhdMSxcsSxbSBIb2xkaW5nIEEuxZ4u!5e0!3m2!1sen!2sse!4v1714316646868!5m2!1sen!2sse"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
         <div className="content flex flex-col sm:flex-row gap-10 px-4 my-16">
