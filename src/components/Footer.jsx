@@ -1,4 +1,5 @@
 import React from "react";
+import { nesmaLogo } from "../constants/images";
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
         <div className="left">All Rights Reserved. Copyright NESMAL.</div>
         <div className="right">
           <div className="logo flex items-center">
-            <img src="../images/logoNesma.webp" alt="" />
+            <img src={nesmaLogo} alt="" />
             <span className=" text-sm ml-3">NESMA HOLDING GROUP</span>
           </div>
         </div>

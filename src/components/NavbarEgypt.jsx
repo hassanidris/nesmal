@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+import { nesmalLogo } from "../constants/images";
 
 const NavbarEgypt = () => {
   const navRef = useRef();
@@ -14,7 +15,7 @@ const NavbarEgypt = () => {
       <div className="navigation max-w-[1290px] w-full m-auto flex justify-between items-center">
         <div className="left">
           <Link to="/">
-            <img src="../images/logoNesmal.webp" alt="logo" />
+            <img src={nesmalLogo} alt="logo" />
           </Link>
         </div>
         <nav
