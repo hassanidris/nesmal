@@ -35,7 +35,7 @@ const CompanyPage = () => {
     <>
       <div className=" text-center p-12 bg-gray-200">
         <h2 className=" text-6xl font-bold uppercase">{company.name}</h2>
-        <p className=" capitalize mt-3 text-gray-500">
+        {/* <p className=" capitalize mt-3 text-gray-500">
           <a
             className=" underline text-gray-600 hover:text-gray-800"
             href={`/`}
@@ -50,7 +50,7 @@ const CompanyPage = () => {
             {company.country}
           </a>{" "}
           / {company.name}
-        </p>
+        </p> */}
       </div>
       <div className=" max-w-[1290px] w-full m-auto">
         <div className=" w-full h-[400px]">

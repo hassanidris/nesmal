@@ -2,17 +2,14 @@ import React from "react";
 import { getEgyptData } from "../../constants/data";
 import CompanyCard from "../../components/CompanyCard";
 import { Link } from "react-router-dom";
+import { egyptBanner, qouteIcon } from "../../constants/images";
 
 const Egypt = () => {
   const data = getEgyptData();
   return (
     <>
       <div className="banner w-full h-[400px]">
-        <img
-          className=" h-full w-full object-cover"
-          src="./images/bnr-home_egypt1.jpg"
-          alt=""
-        />
+        <img className=" h-full w-full object-cover" src={egyptBanner} alt="" />
       </div>
       <div className="wrapper max-w-[1290px] w-full m-auto mt-16">
         <div className=" mb-10">
@@ -38,7 +35,7 @@ const Egypt = () => {
       </div>
       <div className=" bg-gray-200 mt-12 py-12 px-6">
         <div className="max-w-[1290px] w-full m-auto  flex flex-col justify-center items-center gap-8">
-          <img src="./images/icon-qoute.webp" />
+          <img src={qouteIcon} />
           <p className=" text-center text-2xl italic font-thin">
             All our companies are managed and monitored by Nesmal Investment
             Company. Nesmal is constantly looking for new investment
