@@ -7,7 +7,7 @@ const Home = () => {
       <div className="image w-full h-full">
         <img
           className=" w-full h-[calc(100vh-150px)] object-cover"
-          src="../public/images/home-bnr.webp"
+          src="../images/home-bnr.webp"
           alt=""
           srcset=""
         />
