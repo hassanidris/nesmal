@@ -1,8 +1,8 @@
 import React from "react";
-import { getEgyptData } from "../../constants/data";
-import CompanyCard from "../../components/CompanyCard";
+import { getEgyptData } from "../constants/data";
+import CompanyCard from "../components/CompanyCard";
 import { Link } from "react-router-dom";
-import { egyptBanner, qouteIcon } from "../../constants/images";
+import { egyptBanner, qouteIcon } from "../constants/images";
 
 const Egypt = () => {
   const data = getEgyptData();

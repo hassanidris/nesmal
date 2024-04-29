@@ -8,7 +8,7 @@ const NavbarMain = () => {
       <div className="wrapper max-w-[1290px] w-full m-auto flex justify-between items-center">
         <div className="left">
           <Link to="/">
-            <img src={nesmalLogo} alt="" srcset="" />
+            <img src={nesmalLogo} alt="logo" />
           </Link>
         </div>
       </div>

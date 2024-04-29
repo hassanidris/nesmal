@@ -1,5 +1,5 @@
 import React from "react";
-import { nesmalLogo } from "../../constants/images";
+import { nesmalLogo } from "../constants/images";
 import { NavLink } from "react-router-dom";
 
 const EgyptContact = () => {

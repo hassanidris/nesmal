@@ -1,8 +1,8 @@
 import React from "react";
-import { getEgyptData } from "../../constants/data";
-import { getImageURL } from "../../utils/image-util";
+import { getEgyptData } from "../constants/data";
+import { getImageURL } from "../utils/image-util";
 import { Link, NavLink } from "react-router-dom";
-import { egyptAboutBanner, nesmalLogo } from "../../constants/images";
+import { egyptAboutBanner, nesmalLogo } from "../constants/images";
 
 const EgyptAbout = () => {
   const data = getEgyptData();

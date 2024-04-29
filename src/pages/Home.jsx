@@ -10,7 +10,6 @@ const Home = () => {
           className=" w-full h-[calc(100vh-150px)] object-cover"
           src={homeBanner}
           alt=""
-          srcset=""
         />
       </div>
       <div className="overlay absolute flex flex-col justify-center items-center gap-8 py-8 px-16 bg-white/60 mb-16">
