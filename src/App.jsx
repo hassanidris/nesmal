@@ -40,7 +40,7 @@ const router = createBrowserRouter([
         element: <CompanyPage />,
       },
       {
-        path: "egypt_about",
+        path: "/egypt_about",
         element: <EgyptAbout />,
       },
       {
