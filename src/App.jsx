@@ -13,7 +13,7 @@ import EgyptLayout from "./components/EgyptLayout";
 import MainLayout from "./components/MainLayout";
 import TurkeyLayout from "./components/TurkeyLayout";
 import CompanyPage from "./pages/CompanyPage";
-import EgyptAbout from "./pages/EgyptAbout/EgyptAbout";
+import EgyptAbout from "./pages/Egypt/EgyptAbout";
 
 const router = createBrowserRouter([
   {
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
         element: <CompanyPage />,
       },
       {
-        path: "/egypt_about",
+        path: "egypt_about",
         element: <EgyptAbout />,
       },
       {

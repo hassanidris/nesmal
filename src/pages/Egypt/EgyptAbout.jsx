@@ -1,7 +1,7 @@
 import React from "react";
 import { getEgyptData } from "../../constants/data";
 import { getImageURL } from "../../utils/image-util";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { egyptAboutBanner, nesmalLogo } from "../../constants/images";
 
 const EgyptAbout = () => {
@@ -19,12 +19,12 @@ const EgyptAbout = () => {
             Home
           </a>
           {" / "}
-          <a
+          <NavLink
             className=" underline text-gray-600 hover:text-gray-800"
-            href={`/egypt`}
+            to="/egypt"
           >
             egypt
-          </a>{" "}
+          </NavLink>{" "}
           / about
         </p>
       </div>
