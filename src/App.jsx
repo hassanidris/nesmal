@@ -28,7 +28,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/egypt",
+    path: "egypt",
     element: <EgyptLayout />,
     children: [
       {
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/turkey",
+    path: "turkey",
     element: <TurkeyLayout />,
     children: [
       {

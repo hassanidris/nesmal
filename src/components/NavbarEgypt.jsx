@@ -32,7 +32,7 @@ const NavbarEgypt = () => {
             Home
           </NavLink>
           <NavLink
-            to="/egypt_about"
+            to="/egypt/egypt_about"
             className="navLink mx-4 hover:text-gray-500"
             activeClassName="active"
             onClick={showNavbar}
