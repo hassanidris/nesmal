@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Egypt from "./pages/Egypt/Egypt";
-import EgyptAbout from "./pages/Egypt/EgyptAbout";
+
 import EgyptCompany from "./pages/Egypt/EgyptCompany";
 import EgyptContact from "./pages/Egypt/EgyptContact";
 import Turkey from "./pages/Turkey/Turkey";
@@ -13,6 +13,7 @@ import EgyptLayout from "./components/EgyptLayout";
 import MainLayout from "./components/MainLayout";
 import TurkeyLayout from "./components/TurkeyLayout";
 import CompanyPage from "./pages/CompanyPage";
+import EgyptAbout from "./pages/EgyptAbout/EgyptAbout";
 
 const router = createBrowserRouter([
   {
