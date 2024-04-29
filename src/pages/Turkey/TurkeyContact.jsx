@@ -1,5 +1,6 @@
 import React from "react";
 import { nesmalLogo } from "../../constants/images";
+import { NavLink } from "react-router-dom";
 
 const TurkeyContact = () => {
   return (
@@ -7,19 +8,19 @@ const TurkeyContact = () => {
       <div className=" text-center p-12 bg-gray-300">
         <h2 className=" text-6xl font-bold uppercase">contact us</h2>
         <p className=" capitalize mt-3 text-gray-500">
-          <a
+          <NavLink
             className=" underline text-gray-600 hover:text-gray-800"
-            href={`/`}
+            to="/"
           >
             Home
-          </a>
+          </NavLink>
           {" / "}
-          <a
+          <NavLink
             className=" underline text-gray-600 hover:text-gray-800"
-            href={`/turkey`}
+            to="/turkey"
           >
             turkey
-          </a>{" "}
+          </NavLink>{" "}
           / contact
         </p>
       </div>

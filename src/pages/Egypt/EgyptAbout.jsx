@@ -12,12 +12,12 @@ const EgyptAbout = () => {
       <div className=" text-center p-12 bg-gray-300">
         <h2 className=" text-6xl font-bold uppercase">about nesmal egypt</h2>
         <p className=" capitalize mt-3 text-gray-500">
-          <a
+          <NavLink
             className=" underline text-gray-600 hover:text-gray-800"
-            href={`/`}
+            to="/"
           >
             Home
-          </a>
+          </NavLink>
           {" / "}
           <NavLink
             className=" underline text-gray-600 hover:text-gray-800"

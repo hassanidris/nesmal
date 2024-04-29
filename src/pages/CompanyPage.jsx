@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { getEgyptData, getTurkeyData } from "../constants/data";
 import { getImageURL } from "../utils/image-util";
 
@@ -36,19 +36,19 @@ const CompanyPage = () => {
       <div className=" text-center p-12 bg-gray-200">
         <h2 className=" text-6xl font-bold uppercase">{company.name}</h2>
         <p className=" capitalize mt-3 text-gray-500">
-          <a
+          <NavLink
             className=" underline text-gray-600 hover:text-gray-800"
-            href={`/`}
+            to="/"
           >
             Home
-          </a>
+          </NavLink>
           {" / "}
-          <a
+          <NavLink
             className=" underline text-gray-600 hover:text-gray-800"
-            href={`/${company.country}`}
+            to={`/${company.country}`}
           >
             {company.country}
-          </a>{" "}
+          </NavLink>{" "}
           / {company.name}
         </p>
       </div>

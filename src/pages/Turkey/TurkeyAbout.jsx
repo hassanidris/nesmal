@@ -1,7 +1,7 @@
 import React from "react";
 import { getTurkeyData } from "../../constants/data";
 import { getImageURL } from "../../utils/image-util";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   nesmalLogo,
   turkeyAboutBanner,
@@ -16,19 +16,19 @@ const TurkeyAbout = () => {
       <div className=" text-center p-12 bg-gray-200">
         <h2 className=" text-6xl font-bold uppercase">about nesmal turkey</h2>
         <p className=" capitalize mt-3 text-gray-500">
-          <a
+          <NavLink
             className=" underline text-gray-600 hover:text-gray-800"
-            href={`/`}
+            to="/"
           >
             Home
-          </a>
+          </NavLink>
           {" / "}
-          <a
+          <NavLink
             className=" underline text-gray-600 hover:text-gray-800"
-            href={`/turkey`}
+            to="/turkey"
           >
             turkey
-          </a>{" "}
+          </NavLink>{" "}
           / about
         </p>
       </div>
