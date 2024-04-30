@@ -1,12 +1,12 @@
 import React from "react";
-import { getTurkeyData } from "../../constants/data";
-import { getImageURL } from "../../utils/image-util";
+import { getTurkeyData } from "../constants/data";
+import { getImageURL } from "../utils/image-util";
 import { Link, NavLink } from "react-router-dom";
 import {
   nesmalLogo,
   turkeyAboutBanner,
   turkeyHomeImage,
-} from "../../constants/images";
+} from "../constants/images";
 
 const TurkeyAbout = () => {
   const data = getTurkeyData();

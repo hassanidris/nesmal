@@ -1,8 +1,8 @@
 import React from "react";
-import { getTurkeyData } from "../../constants/data";
-import CompanyCard from "../../components/CompanyCard";
+import { getTurkeyData } from "../constants/data";
+import CompanyCard from "../components/CompanyCard";
 import { Link } from "react-router-dom";
-import { turkeyBanner, turkeyHomeImage } from "../../constants/images";
+import { turkeyBanner, turkeyHomeImage } from "../constants/images";
 
 const Turkey = () => {
   const dataT = getTurkeyData();
