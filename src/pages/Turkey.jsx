@@ -30,7 +30,7 @@ const Turkey = () => {
           trigger: companies[0].parentNode,
           start: "top 80%",
           end: "top 30%",
-          markers: true,
+          // markers: true,
         },
       }
     );
