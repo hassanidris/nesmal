@@ -6,15 +6,43 @@ import gsap from "gsap";
 
 const NavbarTurkey = () => {
   const navRef = useRef();
-
   const logoRef = useRef(null);
+  const menuRefs = useRef([]);
+  menuRefs.current = [];
+
   useEffect(() => {
-    const el = logoRef.current;
-    gsap.fromTo(el, { x: -100, opacity: 0 }, { x: 0, duration: 2, opacity: 1 });
+    const logo = logoRef.current;
+    const menus = menuRefs.current;
+
+    gsap.fromTo(
+      logo,
+      { x: -100, opacity: 0 },
+      { x: 0, duration: 1, opacity: 1 }
+    );
+
+    gsap.fromTo(
+      menus,
+      { y: -20, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.4, stagger: 0.4 }
+    );
   }, []);
+
+  const addToRefs = (el) => {
+    if (el && !menuRefs.current.includes(el)) {
+      menuRefs.current.push(el);
+    }
+  };
 
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
+
+    // if (navRef.current.classList.contains("responsive_nav")) {
+    //   gsap.fromTo(
+    //     navRef.current,
+    //     { y: -20, opacity: 0 },
+    //     { y: 0, opacity: 1, duration: 1 }
+    //   );
+    // }
   };
 
   return (
@@ -35,6 +63,7 @@ const NavbarTurkey = () => {
             className="navLink mx-4 hover:text-gray-500"
             activeClassName="active"
             onClick={showNavbar}
+            ref={addToRefs}
           >
             Home
           </NavLink>
@@ -43,6 +72,7 @@ const NavbarTurkey = () => {
             className="navLink mx-4 hover:text-gray-500"
             activeClassName="active"
             onClick={showNavbar}
+            ref={addToRefs}
           >
             About
           </NavLink>
@@ -51,6 +81,7 @@ const NavbarTurkey = () => {
             className="navLink mx-4 hover:text-gray-500"
             activeClassName="active"
             onClick={showNavbar}
+            ref={addToRefs}
           >
             Career
           </NavLink>
@@ -59,6 +90,7 @@ const NavbarTurkey = () => {
             className="navLink mx-4 hover:text-gray-500"
             activeClassName="active"
             onClick={showNavbar}
+            ref={addToRefs}
           >
             Contact
           </NavLink>
