@@ -1,11 +1,44 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { getTurkeyData } from "../constants/data";
 import CompanyCard from "../components/CompanyCard";
 import { Link } from "react-router-dom";
 import { turkeyBanner, turkeyHomeImage } from "../constants/images";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const Turkey = () => {
   const dataT = getTurkeyData();
+  const companyRefs = useRef([]);
+  companyRefs.current = [];
+
+  useEffect(() => {
+    const companies = companyRefs.current;
+
+    gsap.fromTo(
+      companies,
+      { y: 100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.3,
+        scrollTrigger: {
+          scrub: 1,
+          trigger: companies[0].parentNode,
+          start: "top 80%",
+        },
+      }
+    );
+  }, []);
+
+  const addToRefs = (el) => {
+    if (el && !companyRefs.current.includes(el)) {
+      companyRefs.current.push(el);
+    }
+  };
   return (
     <>
       <div className="banner w-full h-[400px]">
@@ -27,7 +60,11 @@ const Turkey = () => {
         </div>
         <div className=" flex flex-wrap justify-center items-center gap-6">
           {dataT.map((company) => (
-            <Link to={`/turkey/company/${company.id}`} className="card">
+            <Link
+              to={`/turkey/company/${company.id}`}
+              className="card"
+              ref={addToRefs}
+            >
               <CompanyCard company={company} key={company.id} />
             </Link>
           ))}

@@ -250,29 +250,29 @@ const companiesEgypt = [
     ],
   },
 
-  {
-    id: 7,
-    name: "Water taxi",
-    country: "egypt",
-    sector: "Transportation",
-    logo: "logo-water-taxi.webp",
-    logoWhite: "logo-water_taxi_w.webp",
-    imgThumb: "thumb-water_taxi.webp",
-    imgBanner: "bnr-water_taxi.webp",
-    description: [
-      "Water Taxi connects metropolitan Cairo by operating boats on a closed loop route on the Nile River in greater Cairo connecting commuters and tourists to their destinations with its numerous docking stations.",
-      "Water Taxi is a young and ambitious enterprise which grew out of a lifelong struggle with daily Cairo traffic. Supported by a team of highly experienced captains, mainly from touristic Nile cruises in Aswan, we take the Nile to let you reach your destinations faster than you could ever imagine. Water Taxi boats are equipped with GPS tracking systems and has safety and comfort as the number one priority.",
-    ],
-    address: [
-      {
-        office: "Egypt, Cairo Office",
-        street: "54, Road 261, New Maadi, Postal code 11435",
-        tel: ["+20 227546 311"],
-        fax: "+20 25193 241",
-        email: "-",
-      },
-    ],
-  },
+  // {
+  //   id: 7,
+  //   name: "Water taxi",
+  //   country: "egypt",
+  //   sector: "Transportation",
+  //   logo: "logo-water-taxi.webp",
+  //   logoWhite: "logo-water_taxi_w.webp",
+  //   imgThumb: "thumb-water_taxi.webp",
+  //   imgBanner: "bnr-water_taxi.webp",
+  //   description: [
+  //     "Water Taxi connects metropolitan Cairo by operating boats on a closed loop route on the Nile River in greater Cairo connecting commuters and tourists to their destinations with its numerous docking stations.",
+  //     "Water Taxi is a young and ambitious enterprise which grew out of a lifelong struggle with daily Cairo traffic. Supported by a team of highly experienced captains, mainly from touristic Nile cruises in Aswan, we take the Nile to let you reach your destinations faster than you could ever imagine. Water Taxi boats are equipped with GPS tracking systems and has safety and comfort as the number one priority.",
+  //   ],
+  //   address: [
+  //     {
+  //       office: "Egypt, Cairo Office",
+  //       street: "54, Road 261, New Maadi, Postal code 11435",
+  //       tel: ["+20 227546 311"],
+  //       fax: "+20 25193 241",
+  //       email: "-",
+  //     },
+  //   ],
+  // },
 ];
 
 const companiesTurkey = [

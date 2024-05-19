@@ -1,11 +1,45 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { getEgyptData } from "../constants/data";
 import CompanyCard from "../components/CompanyCard";
 import { Link } from "react-router-dom";
 import { egyptBanner, qouteIcon } from "../constants/images";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const Egypt = () => {
   const data = getEgyptData();
+  const companyRefs = useRef([]);
+  companyRefs.current = [];
+
+  useEffect(() => {
+    const companies = companyRefs.current;
+
+    gsap.fromTo(
+      companies,
+      { y: 100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.3,
+        scrollTrigger: {
+          scrub: 1,
+          trigger: companies[0].parentNode,
+          start: "top 80%",
+        },
+      }
+    );
+  }, []);
+
+  const addToRefs = (el) => {
+    if (el && !companyRefs.current.includes(el)) {
+      companyRefs.current.push(el);
+    }
+  };
+
   return (
     <>
       <div className="banner w-full h-[400px]">
@@ -27,6 +61,7 @@ const Egypt = () => {
               to={`/egypt/company/${company.id}`}
               className="card"
               key={company.id}
+              ref={addToRefs}
             >
               <CompanyCard company={company} />
             </Link>
