@@ -29,6 +29,8 @@ const Turkey = () => {
           scrub: 1,
           trigger: companies[0].parentNode,
           start: "top 80%",
+          end: "top 30%",
+          markers: true,
         },
       }
     );
@@ -41,7 +43,7 @@ const Turkey = () => {
   };
   return (
     <>
-      <div className="banner w-full h-[400px]">
+      <div className="banner w-full h-[65vh]">
         <img
           className=" h-full w-full object-cover"
           src={turkeyBanner}

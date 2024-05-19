@@ -29,6 +29,8 @@ const Egypt = () => {
           scrub: 1,
           trigger: companies[0].parentNode,
           start: "top 80%",
+          end: "top 30%",
+          // markers: true,
         },
       }
     );
@@ -42,7 +44,7 @@ const Egypt = () => {
 
   return (
     <>
-      <div className="banner w-full h-[400px]">
+      <div className="banner w-full h-[65vh]">
         <img className=" h-full w-full object-cover" src={egyptBanner} alt="" />
       </div>
       <div className="wrapper max-w-[1290px] w-full m-auto mt-16">
