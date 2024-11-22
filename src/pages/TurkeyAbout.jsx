@@ -90,7 +90,7 @@ const TurkeyAbout = () => {
                 Companies
               </h3>
               {data.map((company) => (
-                <Link to={`/egypt/company/${company.id}`} key={company.id}>
+                <Link to={`/turkey/company/${company.id}`} key={company.id}>
                   <div className=" flex items-center gap-1 hover:bg-green-500 px-1 py-2">
                     <div className=" w-[30px]">
                       <img
